@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, useState} from 'react';
+import api from './services/api'
 
 function App() {
+
+    const[raca, setRaca] = useState([])
+
+    const chamarAPI = async (recurso) => {
+      await api.get(recurso).then(response => {
+        setRaca([response.data.message])        
+      })
+    }
+
+  useEffect(()=>{chamarAPI('list/all')}, [])
+
+  console.log("Tipo do retorno: " + typeof(raca))
+  console.log("Conteudo: " + raca)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <h1>Selecione a raça:</h1>
+    <p>
+      {
+        raca.map(item => {
+          return (item)
+        })
+      }
+    </p>
+    </>
   );
 }
-
 export default App;
