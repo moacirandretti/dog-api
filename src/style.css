@@ -1,0 +1,20 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: content-box;
+    padding: 0;
+}
+
+select {
+    padding: 10px;
+}
+
+.container img {
+    width: 300px;
+    max-height: 200px;
+}
+
+.img-container{
+    background: url({img});
+}
+

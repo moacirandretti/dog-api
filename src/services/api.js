@@ -6,4 +6,8 @@ const api = axios.create({
     baseURL: 'https://dog.ceo/api/breeds/'
 })
 
-export default api
+const api_img = axios.create({
+    baseURL: 'https://dog.ceo/api/breed/'
+})
+
+export {api, api_img}
