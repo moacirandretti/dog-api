@@ -5,14 +5,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 🚀 This small personal project has as main objective the learning and development of my skills 💡 with Stack JavaScript / ReactJS.⚛️
 Among the main skills worked throughout this project, we can highlight:
 
-✔ API consumption with Axios 🔗
-✔ Application of the React State concept
-✔Application of the concept of immutability
-✔ Application of the concept of Property of components
-✔ Use of Styled Componets (CSS in JS) 💅
-✔ Fundamental concepts of HTML5, CSS Grid and CSS FluxBox
-✔ Interaction with browser localStorage ⌨
-✔ Code versioning (GIT) 🔙
+ - ✔ API consumption with Axios 🔗
+ - ✔ Application of the React State concept 
+ - ✔ Application of the concept of immutability 
+ - ✔ Application of the concept of Property of components 
+ - ✔ Use of Styled Componets (CSS in JS) 💅  
+ - ✔ Fundamental concepts of HTML5, CSS Grid and CSS FluxBox 
+ -  ✔ Interaction with browser localStorage ⌨ ✔ Code versioning (GIT) 🔙
 
 ## Available Scripts
 
