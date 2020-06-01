@@ -97,7 +97,7 @@ localStorage.setItem('nomeChave', 'valor')
       </Raca>
 
       <Nome>
-      <Label>Nome do Cachorro</Label>
+      <Label>Nome do cão:</Label>
       <InputBox type="text" placeholder="Insira o nome do seu dog" 
       onChange={(e) => setnomeCachorro(e.target.value)} 
       value={nomeCachorro} />

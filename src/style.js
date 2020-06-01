@@ -44,7 +44,7 @@ export const Containner = styled.div`
     display: grid; 
     justify-items: center;
     align-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px, 2fr));
     grid-template-areas: 
     "campos"
     "raca"
@@ -121,9 +121,10 @@ export const SelectBox = styled.select`
 `;
 
 export const InputBox = styled.input`
-    font-size: 22px;
+    font-size: 20px;
     font-family: Roboto, serif;
     color: #A15FFF;
+    max-width: 230px;
 `;
 
 export const Line = styled.div`
