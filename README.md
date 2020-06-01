@@ -8,7 +8,7 @@ Among the main skills worked throughout this project, we can highlight:
  - ✔ Application of the concept of immutability 
  - ✔ Application of the concept of Property of components 
  - ✔ Use of Styled Componets (CSS in JS) 💅  
- - ✔ Fundamental concepts of HTML5, CSS Grid and CSS FluxBox 
+ - ✔ Fundamental concepts of HTML5, CSS Grid and CSS FlexBox 
  - ✔ Interaction with browser localStorage ⌨ 
  - ✔ Code versioning (GIT) 🔙
 
