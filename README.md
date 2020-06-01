@@ -13,7 +13,7 @@ Among the main skills worked throughout this project, we can highlight:
  - ✔ Code versioning (GIT) 🔙
 
 # Screens
-![Amostra do projeto.](https://i.ibb.co/nwHxNq6/ezgif-com-gif-maker.gif)
+![Amostra do projeto.](https://uploaddeimagens.com.br/images/002/683/280/full/ezgif.com-gif-maker.gif?1590980897)
 
 
 ## Available Scripts
