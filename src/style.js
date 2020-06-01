@@ -36,7 +36,7 @@ export const NomeCachorro = styled.p`
 `;
 
 export const Containner = styled.div`
-    margin: 0 auto;
+    margin: 30px auto;
     width: 60vw;
     color: #000;
     font-size:25px;
@@ -44,7 +44,7 @@ export const Containner = styled.div`
     display: grid; 
     justify-items: center;
     align-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(600px, 2fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
     grid-template-areas: 
     "campos"
     "raca"

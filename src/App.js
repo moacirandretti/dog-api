@@ -114,7 +114,7 @@ localStorage.setItem('nomeChave', 'valor')
 
             if (valor === cor ) {
               
-              return <option key={cor} defaultValue value={valor} className="12"  >{valor}</option>
+              return <option key={cor} defaultValue value={valor} className="selected"  >{valor}</option>
             } else{
 
               return <option key={cor} value={cor}>{cor}</option>
