@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {api, api_img} from './services/api'
-import { ImagemContainner, NomeCachorro } from './style';
+import { ImagemContainner, NomeCachorro, GlobalStyle, Containner,
+  Raca, Nome, CorFonte, TipoFonte, Botao, Label, SelectBox, Line, InputBox } from './style';
 
 function App() {
 
@@ -78,10 +79,12 @@ localStorage.setItem('nomeChave', 'valor')
 
   return (
     <>
-    <div className="container">
-
-      <label>Selecione a raça:</label>
-      <select onChange={(e) => setracaSelecionada(e.target.value)} value={racaSelecionada}>
+    <GlobalStyle />
+    <Containner >
+      <Raca>
+        <Line>
+      <Label>Selecione a raça:</Label>
+      <SelectBox onChange={(e) => setracaSelecionada(e.target.value)} value={racaSelecionada}>
         {
           raca.map(item => {
             return (
@@ -89,16 +92,20 @@ localStorage.setItem('nomeChave', 'valor')
             )
           })
         }
-      </select>
+      </SelectBox>
+      </Line>
+      </Raca>
 
-      <label>Nome do Cachorro</label>
-      <input type="text" placeholder="Insira o nome do seu dog" 
+      <Nome>
+      <Label>Nome do Cachorro</Label>
+      <InputBox type="text" placeholder="Insira o nome do seu dog" 
       onChange={(e) => setnomeCachorro(e.target.value)} 
       value={nomeCachorro} />
+      </Nome>
 
-      <label>Cor da fonte:</label>
-      {/* <select onChange={(e) => setcorFonte(e.target.value)} value={corFonte} > */}
-      <select onChange={(e) => setcorFonte(e.target.value)} value={corFonte}  >
+      <CorFonte>
+      <Label>Cor da fonte:</Label>
+      <SelectBox onChange={(e) => setcorFonte(e.target.value)} value={corFonte}  >
         {
           cores.map(cor => {
             const valor = localStorage.getItem('storageCor')
@@ -115,30 +122,32 @@ localStorage.setItem('nomeChave', 'valor')
             })
 
         }
-      </select>
+      </SelectBox>
+      </CorFonte>
 
-      <label>Selecione a fonte:</label>
-      <select onChange={(e) => setNomeFonte(e.target.value)} value={nomeFonte} >
+      <TipoFonte>
+      <Label>Selecione a fonte:</Label>
+      <SelectBox onChange={(e) => setNomeFonte(e.target.value)} value={nomeFonte} >
 
         <option value="Roboto" >Roboto</option>
         <option value="Oswald, sans-serif" >Oswald</option>
         <option value="Merriweather, serif" >Merriweather</option>
-        <option value="'Bebas Neue', regular" >Bebas Neue</option>
+        <option value="'Montserrat', sans-serif" >Montserrat</option>
         <option value="'Pacifico', cursive" >Pacifico</option>
  
-      </select>
-
-      <button onClick={() => handleClick()}>Salvar</button>
+      </SelectBox>
+      </TipoFonte>
+      
+      <Botao onClick={() => handleClick()}>Salvar</Botao>  
 
       <ImagemContainner imageURL={img} >
+
         <NomeCachorro text={nomeCachorro} cor={corFonte} fonte={nomeFonte} >
           {nomeCachorro}
         </NomeCachorro>
       </ ImagemContainner>
-      
 
-
-    </div>
+    </Containner>
 
 
     </>
