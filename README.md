@@ -15,6 +15,10 @@ Among the main skills worked throughout this project, we can highlight:
 # Screens
 ![Amostra do projeto.](https://i.ibb.co/Tv9YkN6/selecione-a-fonte.png)
 
+# About the app
+
+The App works as follows, the user enters his dog's name as well as the breed. Then customize the color and type of the font to display over the image of the dog. The user clicks save and then the chosen data was stored in his browser.
+
 
 ## Available Scripts
 
